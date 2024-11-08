@@ -58,6 +58,7 @@ html {
     /* font-size for rem usage on 10 px by default*/
     font-size: 62.5%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body {

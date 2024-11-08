@@ -65,12 +65,8 @@
     /* Header navigation */
     .btn-mobile-nav {
         display: block;
-        position: fixed;
+        position: absolute;
         right: 5rem;
-        z-index: 20;
-    }
-
-    .icon-mobile-nav {
     }
 
     .main-nav {
@@ -96,6 +92,11 @@
 
         /*3. Hide from screen readings */
         visibility: hidden;
+    }
+
+    .nav-open .btn-mobile-nav {
+        position: fixed;
+        z-index: 20;
     }
 
     .nav-open .main-nav {
