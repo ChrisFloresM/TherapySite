@@ -1,0 +1,302 @@
+
+/* Below 1780 px (this is only required to make the hero img responsive) */
+@media (max-width: 111em) {
+    .hero-img--secondary {
+        transform: translateX(40%) scale(0.9);
+    }
+}
+
+/* Below 1344px*/
+@media (max-width: 84em) {
+    .hero {
+        max-width: 120rem;
+    }
+
+    .heading-primary {
+        font-size: 4.4rem;
+    }
+
+    .hero-problems-box {
+        flex-flow: wrap;
+    }
+
+    .problem-main-text {
+        flex-shrink: 0;
+    }
+}
+
+/* Below 1200px*/
+@media (max-width: 75em) {
+    html {
+        font-size: 56.25%;
+    }
+
+    .heading-secondary {
+        font-size: 3.6rem;
+    }
+
+    .heading-tertiary {
+        font-size: 2.4rem;
+    }
+
+    .header {
+        padding: 0 3.2rem;
+    }
+
+    .main-nav-list {
+        gap: 3.2rem;
+    }
+
+    .hero {
+        gap: 4.8rem;
+    }
+}
+
+/* Below 944px (tablets) */
+@media (max-width: 59em) {
+    html {
+        font-size: 50%;
+    }
+
+    .subheading, .heading-secondary {
+        text-align: center;
+    }
+
+    /* Header navigation */
+    .btn-mobile-nav {
+        display: block;
+        position: fixed;
+        right: 5rem;
+        z-index: 20;
+    }
+
+    .icon-mobile-nav {
+    }
+
+    .main-nav {
+        background-color: rgba(255, 255, 255, 0.95);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 20;
+        transform: translateX(100%);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s;
+
+        /* 1. Hide it visually*/
+        opacity: 0;
+
+        /*2. Unaccessible to mouse and keyboard */
+        pointer-events: none;
+
+        /*3. Hide from screen readings */
+        visibility: hidden;
+    }
+
+    .nav-open .main-nav {
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+        transform: translateX(0);
+        font-weight: 700;
+    }
+
+    .main-nav-link:is(:link, :visited) {
+        font-size: 3rem;
+    }
+
+    .main-nav-list {
+        flex-direction: column;
+        gap: 4.8rem;
+    }
+
+    .nav-open .icon-mobile-nav[name="close-outline"] {
+        display: block;
+    }
+
+    .nav-open .icon-mobile-nav[name="menu-outline"] {
+        display: none;
+    }
+
+
+    /* Hero section */
+    .hero {
+        grid-template-columns: 1fr;
+        padding: 0 8rem;
+    }
+
+    .hero-text{
+        text-align: center;
+    }
+
+    .hero-img {
+        max-width: 60%;
+    }
+
+    .hero-img--primary {
+        transform: translateX(10%);
+    }
+
+    .hero-img--secondary {
+        transform: translateX(50%) scale(0.9);
+    }
+
+    /* Why section */
+    .reason-icon {
+        font-size: 7rem;
+    }
+
+/*     Blog section */
+    .blog-container {
+        grid-template-columns: 1fr;
+        width: 300px;
+    }
+
+
+    /* Servicios */
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+
+    .servicio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .servicio-text {
+        width: 50%;
+    }
+
+    .servicio-title {
+        font-size: 2.6rem;
+    }
+
+    .servicio-descripción {
+        font-size: 2rem;
+    }
+
+    .servicio-precio {
+        font-size: 2.6rem;
+    }
+
+    /* CTA */
+    .cta {
+        grid-template-columns: 3fr 2fr;
+    }
+
+    .cta-form {
+        grid-template-columns: 1fr;
+    }
+
+    .btn--form {
+        margin-top: 1.2rem;
+    }
+
+    /* footer */
+    .grid--footer {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .logo-col, .address-col {
+        grid-column: span 3;
+    }
+    .nav-col {
+        grid-row: 1;
+        grid-column: span 2;
+    }
+}
+
+/* Below 550px */
+@media (max-width: 34em) {
+
+    html {
+        font-size: 43.75%;
+    }
+
+    /* General components - Grid */
+    .grid {
+        row-gap: 4.8rem;
+    }
+
+    .grid--2-cols {
+        grid-template-columns: 1fr;
+    }
+
+    .btn,
+    .btn:is(:link, :visited) {
+        padding: 2.4rem 1.6rem;
+    }
+
+    /* Hero section */
+    .section-hero {
+        padding: 2.4rem 0 6.4rem 0;
+    }
+
+    .hero {
+        padding: 0 3.2rem;
+    }
+
+    /* Why */
+    .reason-img-box {
+        transform: translateY(4rem);
+    }
+
+    .reason-img-box:nth-child(2) {
+        grid-row: 1;
+    }
+
+    .reason-img-box:nth-child(6) {
+        grid-row: 5;
+    }
+
+    .reason-text-box {
+        text-align: center;
+    }
+
+    /* Blog */
+    .blog-container {
+        width: 250px;
+    }
+
+    /* Servicios */
+    .servicio-text {
+        width: 80%;
+    }
+
+    .servicio-title {
+        font-size: 2rem;
+    }
+
+    .servicio-descripción {
+        font-size: 1.7rem;
+    }
+
+    .servicio-precio {
+        font-size: 2rem;
+    }
+
+    /* cta */
+    .cta {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-text-box {
+        padding: 3.2rem;
+    }
+
+    .cta .heading-secondary {
+        text-align: left;
+    }
+    .cta-img-box {
+        height: 30rem;
+        grid-row: 1;
+        background-position: 50% 15%;
+    }
+
+}

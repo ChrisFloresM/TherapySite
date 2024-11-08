@@ -1,0 +1,207 @@
+/*
+Design Decisions Systems:
+
+1. Typography:
+    => Font sizes (px): 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+    => Font weights:
+        - Default: 400
+        - semi-bold: 500
+        - mid-bold: 600
+        - Bold: 700
+    => Line heights:
+        -1.05
+        -1
+        -1.2
+        -1.6
+
+2. Colors:
+    => Primary: #ccd5ae
+        => Tints:
+            - #e6ead7
+            - #fafbf7
+        => Shades:
+            - #b8c09d
+            - #373a2f
+            - #4a4d3f
+        => Accents:
+        => Greys:
+            -#333
+
+     => Secondary: #d4a373
+        => Tints:
+        => Shades:
+            -#bf9368
+            -#55412e
+        => Accents:
+        => Greys:
+            -#333
+            -#767676;
+
+     => Tertiary: #fefae0
+
+3. Shadows:
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+
+4. Border radius:
+        => Default: 10px
+
+5. Whitespace:
+    => Spacing (px): 2 / 4 / 8 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+  6. Letter spacing:
+    - -0.5px
+    - 0.75px
+ */
+
+/* ============ General base styles =================== */
+html {
+    /* font-size for rem usage on 10 px by default*/
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    color: #333;
+    overflow-x: hidden;
+}
+
+*:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.8rem #d4a373;
+}
+
+/* =============== Container ================ */
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+}
+
+/* =============== Grid ================ */
+.grid {
+    display: grid;
+    column-gap: 6.4rem;
+    row-gap: 9.6rem;
+}
+
+.grid--2-cols {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5-cols {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.grid--center-v {
+    align-items: center;
+}
+
+/* =============== Headings ================ */
+.heading-primary, .heading-secondary, .heading-tertiary {
+    font-weight: 700;
+    color: #333;
+    margin-top: 0;
+    letter-spacing: -0.5px;
+}
+
+.heading-primary {
+    font-size: 6.2rem;
+    line-height: 1.1;
+    margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+    font-size: 4.4rem;
+    line-height: 1.2;
+}
+
+.heading-tertiary {
+    font-size: 3.6rem;
+    line-height: 1.2;
+    margin-bottom: 3.2rem;
+}
+
+.subheading {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #bf9368;
+    text-transform: uppercase;
+    margin-bottom: 1.6rem;
+    letter-spacing: 1px;
+}
+
+/* =============== Buttons ================= */
+.btn-box {
+    margin-bottom: 8rem;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 1.6rem 3.2rem;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+
+    /* Exclusive for single buttons */
+    border: none;
+    cursor: pointer;
+}
+
+.btn--full:link, .btn--full:visited {
+    color: #fefae0;
+    background-color: #d4a373;
+}
+
+.btn--outline:link, .btn--outline:visited {
+    color: #d4a373;
+    background-color: #fefae0;
+}
+
+.btn--full:hover, .btn--full:active {
+    color: #fefae0;
+    background-color: #bf9368;
+}
+
+.btn--outline:hover, .btn--outline:active {
+    box-shadow: inset 0 0 0 3px #fff;
+    background-color: #e6ead7;
+}
+
+.btn--form {
+    background-color: #373a2f;
+    color: #fafbf7;
+    align-self: end;
+    padding: 1.2rem;
+}
+
+.btn--form:hover {
+    background-color: #4a4d3f;
+}
+
+/* ============= Margins ============== */
+.margin-right-sm {
+    margin-right: 2.4rem;
+}
+
+/* ======== Inline elements ============= */
+.strong-element {
+    font-size: 2.2rem;
+    color: #bf9368;
+}
+
