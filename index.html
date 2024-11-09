@@ -252,20 +252,20 @@
 						<div class="cta-text-box">
 							<h2 class="heading-secondary">Estás a un paso de comenzar tu proceso</h2>
 							<p class="cta-text">Es momento de comenzar a trabajar eso que te pesa. No dudes en contactarme.</p>
-							<form class="cta-form" action="#">
+							<form class="cta-form" name="sign-up" netlify>
 								<div>
 									<label for="full-name">Full Name</label>
-									<input id="full-name" type="text" placeholder="Jhon Doe" required>
+									<input id="full-name" type="text" placeholder="Jhon Doe" name="full-name" required>
 								</div>
 
 								<div>
 									<label for="email">Email address</label>
-									<input id="email" type="email" placeholder="JhonDoe@example.com" required>
+									<input id="email" type="email" placeholder="JhonDoe@example.com" name="email" required>
 								</div>
 
 								<div>
 									<label for="select-session-type">¿Qué servicio necesitas?</label>
-									<select id="select-session-type" required>
+									<select id="select-session-type" name="select-session-type" required>
 										<option value="">Selecciona una opción:</option>
 										<option value="individual">Terapia individual</option>
 										<option value="pareja">Terapia de pareja</option>
