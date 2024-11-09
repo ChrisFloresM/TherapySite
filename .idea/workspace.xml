@@ -9,11 +9,19 @@
       <change afterPath="$PROJECT_DIR$/../practiceComponents/Accordion/img/hero.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../practiceComponents/Accordion/img/maria.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../practiceComponents/Accordion/styles/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Samuel-Moran-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Samuel-Moran.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/razones/emociones.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/razones/metas.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/razones/vida.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/trastornos/ansiedad.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/trastornos/ansiedad.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/trastornos/conflictos-de-pareja.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/trastornos/conflictos-de-pareja.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/trastornos/depresion.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/trastornos/depresion.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/general.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/general.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/queries.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/queries.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +55,7 @@
   &quot;keyToString&quot;: {
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;js-features&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/terry/Desktop/Code/WebProjects/TherapySite&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -86,7 +94,9 @@
       <workItem from="1730669610091" duration="3723000" />
       <workItem from="1730782733648" duration="597000" />
       <workItem from="1730925238319" duration="7848000" />
-      <workItem from="1731072466647" duration="20624000" />
+      <workItem from="1731072466647" duration="21497000" />
+      <workItem from="1731127820916" duration="3223000" />
+      <workItem from="1731162590069" duration="3163000" />
     </task>
     <servers />
   </component>
